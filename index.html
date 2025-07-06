@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Georgia, serif;
-      max-width: 700px;
+      max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.6;
@@ -26,33 +26,90 @@
       unicode-bidi: bidi-override;
       direction: rtl;
     }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      object-fit: cover;
+      background: #eee;
+    }
+    .project {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 1.5em;
+    }
+    .project img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      background: #eee;
+    }
+    .project-content {
+      flex: 1;
+    }
   </style>
 </head>
 <body>
 
   <h1>Alexander Jermann</h1>
-  <p>
-    I work at the intersection of <strong>AI</strong>, <strong>product strategy</strong>, and <strong>business transformation</strong>. 
-    Currently, I'm helping SaaS companies and private equity firms use AI to boost profitability, improve operations, and scale faster.
-  </p>
-
-  <p>
-    Previously, I worked at <strong>Goldman Sachs</strong> in Global Markets and studied Computer Science at <strong>Columbia</strong>.
-  </p>
-
-  <p>
-    I build tools that help people make better decisions — from AI voice agents to asset onboarding platforms.
-  </p>
-
-  <h2>Projects</h2>
-  <p><a href="/projects/">alexanderjermann.com/projects →</a></p>
 
   <h2>Contact</h2>
   <p>
-    Email: <span class="email">moc.liamg@nnamrej.rednaxela</span><br/>
+    Email: <span class="email">moc.liamg@namrej.rednaxela</span><br/>
     LinkedIn: <a href="https://www.linkedin.com/in/alexanderjermann/" target="_blank">alexanderjermann</a><br/>
     X/Twitter: <a href="https://x.com/alexjermann" target="_blank">@alexjermann</a>
   </p>
+
+  <div class="profile">
+    <img src="https://via.placeholder.com/100" alt="Project Placeholder" />
+    <div>
+      <p>
+        I’m currently working as an <strong>AI Resident at Google X Moonshot Factory</strong>, focusing on building tools that help people make better decisions.
+      </p>
+      <p>
+        My work lies at the intersection of <strong>AI</strong>, <strong>product strategy</strong>, and <strong>business transformation</strong>. 
+        I’ve helped SaaS companies and private equity firms use AI to boost profitability, improve operations, and scale faster.
+      </p>
+      <p>
+        Previously, I worked at <strong>Goldman Sachs</strong> in Global Markets and studied Computer Science at <strong>Columbia University</strong> 
+        after completing a liberal arts degree in the UK.
+      </p>
+    </div>
+  </div>
+
+  <h2>Selected Projects</h2>
+
+  <div class="project">
+    <img src="https://via.placeholder.com/100" alt="Project Placeholder" />
+    <div class="project-content">
+      <strong>AI Hotel Front Desk Agent</strong><br/>
+      A voice-based app that lets guests call a hotel’s AI front desk from their room phone — no apps, no downloads.<br/>
+      <a href="#">[Read more]</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="https://via.placeholder.com/100" alt="Project Placeholder" />
+    <div class="project-content">
+      <strong>AI Asset Onboarding Platform</strong><br/>
+      Built a multimodal assistant using voice + image inputs to onboard hotel assets (e.g., TVs, boilers). Projected to save 90% of onboarding time.<br/>
+      <a href="#">[Demo]</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="https://via.placeholder.com/100" alt="Project Placeholder" />
+    <div class="project-content">
+      <strong>LLM-Driven Report Builder</strong><br/>
+      Tool that turns meetings and transcripts into structured summaries and collaborative write-ups using Open WebUI.<br/>
+      <a href="#">[Coming Soon]</a>
+    </div>
+  </div>
 
 </body>
 </html>
