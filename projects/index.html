@@ -23,7 +23,20 @@
       text-decoration: underline;
     }
     .project {
+      display: flex;
+      gap: 20px;
       margin-bottom: 1.5em;
+      align-items: flex-start;
+    }
+    .project img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      background: #eee;
+      border-radius: 4px;
+    }
+    .project-content {
+      flex: 1;
     }
   </style>
 </head>
@@ -32,21 +45,30 @@
   <h1>Selected Projects</h1>
 
   <div class="project">
-    <strong>AI Hotel Front Desk Agent</strong><br/>
-    A voice-based app that lets guests call a hotel’s AI front desk from their room phone — no apps, no downloads.<br/>
-    <a href="#">[Read more]</a>
+    <img src="/public/graphing.png" alt="MathLingo Project" />
+    <div class="project-content">
+      <strong>MathLingo</strong><br/>
+      An adaptive math learning platform that generates personalized math problems and provides instant feedback. Features four different question types with AI-powered grading and interactive drawing interfaces.<br/>
+      <a href="https://github.com/jermann/mathlingo" target="_blank">[GitHub]</a>
+    </div>
   </div>
 
   <div class="project">
-    <strong>AI Asset Onboarding Platform</strong><br/>
-    Built a multimodal assistant using voice + image inputs to onboard hotel assets (e.g., TVs, boilers). Projected to save 90% of onboarding time.<br/>
-    <a href="#">[Demo]</a>
+    <img src="/public/swissper.png" alt="SwissPer Project" />
+    <div class="project-content">
+      <strong>SwissPer</strong><br/>
+      A Swiss performance platform helping companies optimize their operations and boost profitability through data-driven insights and AI-powered solutions.<br/>
+      <a href="https://www.swissper.app/" target="_blank">[Website]</a>
+    </div>
   </div>
 
   <div class="project">
-    <strong>LLM-Driven Report Builder</strong><br/>
-    Built a tool that turns meetings and transcripts into structured summaries and collaborative write-ups using Open WebUI.<br/>
-    <a href="#">[Coming Soon]</a>
+    <img src="/public/locations.png" alt="McDonald's Site Selector" />
+    <div class="project-content">
+      <strong>McDonald's Site Selector</strong><br/>
+      A location-based site selection tool for McDonald's restaurants, helping optimize placement and market coverage.<br/>
+      <a href="/mcdonalds-selector">[View Project]</a>
+    </div>
   </div>
 
   <p><a href="/">← Back to home</a></p>
